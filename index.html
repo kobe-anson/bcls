@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>百城联赛</title>
+</head>
+<body>
+  <div id="audio_btn" class="audio open"></div>
+  <!-- 加载页 -->
+  <div class="page loading-page">
+    <div class="loading">
+      <span class="icon"></span>
+      <span class="txt">loading</span>
+    </div>
+    <div class="process">
+      <div class="process-bar"></div>
+    </div>
+  </div>
+
+  <!-- 开始页 -->
+  <div class="page start-page">
+    <img src="./images/logo_text.png" alt="穿越火线" class="logo">
+    <div class="slogan">
+      <img src="./images/main_title.png" alt="2021穿越火线" class="main-title animate__animated animate__bounceIn">
+      <img src="./images/sub_title.png" alt="百城联赛" class="sub-title animate__animated animate__bounceIn">
+      <img src="./images/address.png" alt="秋季赛 · 上海站" class="address animate__animated animate__bounceIn">
+    </div>
+    <div id="start_btn" class="animate__animated animate__bounceIn btn">开始寻宝</div>
+  </div>
+
+  <!-- 地图页 -->
+  <div class="page map-page">
+    <div class="animate__animated animate__fadeInDown main-title">百城联赛上海站-导览系统</div>
+    <div class="animate__animated animate__fadeInDown sub-title">快快寻找地图中的隐藏赛事信息吧！</div>
+    <div class="map">
+      <div class="tip">
+        <span class="line"></span>
+        <span class="txt">点击数字寻宝</span>
+      </div>
+      <img src="./images/ta.png" alt="东方明珠" class="tower">
+      <div class="area area1" data-name="嘉定区" data-index="0">
+        <p class="point">
+          <span class="number">1</span>
+        </p>
+        <p class="name">嘉定区</p>
+      </div>
+      <div class="area area2" data-name="青浦区" data-index="1">
+        <p class="point">
+          <span class="number">2</span>
+        </p>
+        <p class="name">青浦区</p>
+      </div>
+      <div class="area area3" data-name="松江区" data-index="2">
+        <p class="point">
+          <span class="number">3</span>
+        </p>
+        <p class="name">松江区</p>
+      </div>
+      <div class="area area4" data-name="金山区" data-index="3">
+        <p class="point">
+          <span class="number">4</span>
+        </p>
+        <p class="name">金山区</p>
+      </div>
+      <div class="area area5" data-name="奉贤区" data-index="4">
+        <p class="point">
+          <span class="number">5</span>
+        </p>
+        <p class="name">奉贤区</p>
+      </div>
+      <div class="area area6" data-name="南汇区" data-index="5">
+        <p class="point">
+          <span class="number">6</span>
+        </p>
+        <p class="name">南江区</p>
+      </div>
+      <div class="area area7" data-name="浦东新区" data-index="6">
+        <p class="point">
+          <span class="number">7</span>
+        </p>
+        <p class="name">浦东新区</p>
+      </div>
+      <div class="area area8" data-name="闵行区" data-index="7">
+        <p class="point">
+          <span class="number">8</span>
+        </p>
+        <p class="name">闵行区</p>
+      </div>
+      <div class="area area9" data-name="崇明区" data-index="8">
+        <p class="point">
+          <span class="number">9</span>
+        </p>
+        <p class="name">崇明区</p>
+      </div>
+      <div class="area area10" data-name="宝山区" data-index="9">
+        <p class="point">
+          <span class="number">10</span>
+        </p>
+        <p class="name">宝山区</p>
+      </div>
+      <!-- <div class="area area11" data-name="上海市" data-index="10">
+        <p class="point">
+          <span class="number">11</span>
+        </p>
+        <p class="name">上海市</p>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- 扫描页 -->
+  <div class="page scan-page">
+    <h4 class="title">扫描标题扫描标题</h4>
+    <div class="scan-border">
+      <span class="tit">穿越火线</span>
+      <span class="line"></span>
+    </div>
+    <div class="info">
+      <h5 class="tit">
+        <span class="icon"></span>
+        寻宝介绍：
+      </h5>
+      <div class="desc">寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝介绍寻宝</div>
+    </div>
+  </div>
+
+  <!-- 结果弹窗 -->
+  <div class="pop-container">
+    <div class="pop-body animate__animated animate__bounceIn">
+      <div class="content">
+        <h4 class="title">扫描结果</h4>
+        <div class="result">
+          <img src="./images/10.png" alt="" class="weapon10">
+          <!-- <p>很遗憾,<br />本区域已搜空</p> -->
+          <!-- <h5 class="tit">
+            恭喜你集齐<span>五件套</span>
+          </h5>
+          <div class="list">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div> -->
+        </div>
+      </div>
+      <div class="ignore btn continue-btn">继续扫描此区域</div>
+      <div class="btn back-btn">返回扫描其他区域</div>
+      <div class="btn start-btn">开始组装</div>
+      <div class="btn reset-btn">再玩一次</div>
+    </div>
+  </div>
+
+  <div class="mask"></div>
+
+  <audio id="weapon-audio" src="./images/2.mp3"></audio>
+
+  <script src="./lib/js/jquery-1.11.3.min.js"></script>
+  <script src="./lib/js/three.min.js"></script>
+  <script src="./js/smoke.js"></script>
+  <script src="./js/smoke1.js"></script>
+  <script src="./js/fallDown.js"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
